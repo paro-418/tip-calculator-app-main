@@ -1,0 +1,15 @@
+@media (max-width : 376px){
+   .app-name{
+       margin: 3rem 0 2.5rem 0;
+   }
+   .main-box{
+       grid-template-columns: 1fr;
+       width: 100%;
+   }
+   .left{
+       margin-bottom: 2rem;
+   }
+   .reset{
+       margin-top: 2rem;
+   }
+}

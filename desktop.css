@@ -102,7 +102,7 @@ body {
 }
 
 .tip:hover {
-  background-color: hsl(185, 41%, 84%);
+  background-color: hsl(172, 67%, 45%);
   color: hsl(183, 100%, 15%);
 }
 
@@ -169,10 +169,11 @@ body {
   cursor: pointer;
   background-color: hsl(172, 79%, 65%);
 }
-footer {
-  margin-top: 9rem;
+
+.show{
+  display: block;
 }
 
-footer a:link {
-  text-decoration: none;
+.hide{
+  display: none;
 }
