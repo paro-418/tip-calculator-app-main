@@ -23,7 +23,6 @@ body {
   display: grid;
   grid-template-columns: 1fr 1fr;
   width: 52%;
-  height: 50%;
   column-gap: 2.5rem;
   padding: 2.2rem;
   border-radius: 1.5rem;
@@ -33,12 +32,16 @@ body {
   color: hsl(186, 14%, 43%);
 }
 
+.left label:first-child{
+  margin-top: 0;
+}
+
 .left .input {
   border: 2px solid transparent;
   border-radius: 4px;
   background-color: hsl(189, 41%, 97%);
   width: 100%;
-  padding: 0.8rem 2rem;
+  padding: 0.6rem 2rem;
   -moz-appearance: textfield;
   text-align: right;
   font-weight: 700;
@@ -46,6 +49,12 @@ body {
   background-position-y: 50%;
   background-position-x: 4%;
   cursor: pointer;
+  font-size: 1.3rem;
+  font-family: "Space Mono", monospace;
+}
+
+.left input:placeholder-shown{
+  font-family: "Space Mono", monospace;
 }
 
 .left .input:focus {
@@ -76,6 +85,10 @@ body {
   margin: 1.4rem 0 0.6rem 0;
 }
 
+.left .no-of-peoples{
+  display: flex;
+  justify-content: space-between;
+}
 .tip {
   font-family: "Space Mono", monospace;
   font-weight: 700;
@@ -110,6 +123,8 @@ body {
   color: hsl(186, 14%, 43%);
 }
 .right {
+  display: flex;
+  flex-direction: column;
   border-radius: 1.1rem;
   padding: 2.2rem 2.2rem 1.8rem 2.2rem;
   background-color: hsl(183, 100%, 15%);
@@ -124,7 +139,7 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin: 2rem 0rem;
+  margin-top: 1rem;
 }
 
 .box-price {
@@ -145,7 +160,7 @@ body {
   font-weight: 700;
   color: hsl(183, 100%, 15%);
   border-radius: 5px;
-  margin: 3.4rem 0 0 0;
+  margin: 6.8rem 0 0 0;
   letter-spacing: 0.09rem;
   font-size: 0.9rem;
 }

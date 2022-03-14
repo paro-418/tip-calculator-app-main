@@ -3,7 +3,6 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- displays site properly based on user's device -->
 
     <link
       rel="icon"
@@ -28,7 +27,7 @@
     <main class="main-box">
       <div class="left">
         <label for="bill" class="text-color">Bill</label>
-        <input type="number" name="bill" class="bill-input input" />
+        <input type="number" name="bill" class="bill-input input" placeholder="0"/>
 
         <p class="left-p text-color">Select Tip %</p>
         <div class="tip-options">
@@ -46,8 +45,11 @@
           />
         </div>
 
-        <label for="people" class="text-color">Number of People</label>
-        <input type="number" name="people" class="people input" />
+        <div class="text-color no-of-peoples">
+          <label for="people">Number of People</label>
+          <span>can't be empty</span>
+        </div>
+        <input type="number" name="people" class="people input" placeholder="0"/>
       </div>
       <div class="right">
         <div class="box-1">
