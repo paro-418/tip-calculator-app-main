@@ -27,29 +27,29 @@
     <main class="main-box">
       <div class="left">
         <label for="bill" class="text-color">Bill</label>
-        <input type="number" name="bill" class="bill-input input" placeholder="0"/>
+        <input type="number" name="bill" class="bill-input input" placeholder="0" id="netbill"/>
 
         <p class="left-p text-color">Select Tip %</p>
         <div class="tip-options">
-          <button class="tip">5%</button>
-          <button class="tip">10%</button>
-          <button class="tip">15%</button>
-          <button class="tip">25%</button>
-          <button class="tip">50%</button>
+          <button class="tip" value="0.05" onclick="percentageValue(0.05)">5%</button>
+          <button class="tip" value="0.10" onclick="percentageValue(0.10)">10%</button>
+          <button class="tip" value="0.15" onclick="percentageValue(0.15)">15%</button>
+          <button class="tip" value="0.25" onclick="percentageValue(0.25)">25%</button>
+          <button class="tip" value="0.50" onclick="percentageValue(0.50)">50%</button>
           <input
             class="custom tip"
             type="text"
             name="custom"
-            id=""
+            id="custom-tip"
             placeholder="Custom"
           />
         </div>
 
         <div class="text-color no-of-peoples">
           <label for="people">Number of People</label>
-          <span class="hide">can't be empty</span>
+          <span class="hide" id="people-err">can't be empty</span>
         </div>
-        <input type="number" name="people" class="people input" placeholder="0"/>
+        <input type="number" name="people" class="people input" placeholder="0" id="people"/>
       </div>
       <div class="right">
         <div class="box-1">
@@ -57,14 +57,14 @@
             <p class="box-head">Tip Amount</p>
             <p class="box-person text-color">/ person</p>
           </div>
-          <p class="box-price" class="tip-per-person total">$0.56</p>
+          <p class="box-price" class="tip-per-person total" id="tip-per-person">$0.00</p>
         </div>
         <div class="box-2">
           <div>
             <p class="box-head">Total</p>
             <p class="box-person text-color">/ person</p>
           </div>
-          <p class="box-price" class="total-per-person total">$0.00</p>
+          <p class="box-price" class="total-per-person total" id="total-per-person">$0.00</p>
         </div>
         <button type="reset" class="reset">reset</button>
       </div>

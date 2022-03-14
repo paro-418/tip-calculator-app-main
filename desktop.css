@@ -172,6 +172,7 @@ body {
 
 .show{
   display: block;
+  color: red;
 }
 
 .hide{
