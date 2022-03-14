@@ -17,54 +17,61 @@
       href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="desktop.css">
-    <link rel="stylesheet" href="mobile.css">
+    <link rel="stylesheet" href="desktop.css" />
+    <link rel="stylesheet" href="mobile.css" />
     <script defer src="function.js"></script>
     <title>Frontend Mentor | Tip calculator app</title>
   </head>
   <body>
-    <h2 class="app-name">splitter</h2>
+    <img class="app-name" src="images/logo.svg" alt="" />
 
     <main class="main-box">
       <div class="left">
-        <label for="bill" class="bill"></label>
-        <input type="number" name="bill" class="bill-input" />
+        <label for="bill" class="text-color">Bill</label>
+        <input type="number" name="bill" class="bill-input input" />
 
-        <p class="select-tip"></p>
+        <p class="left-p text-color">Select Tip %</p>
         <div class="tip-options">
           <button class="tip">5%</button>
           <button class="tip">10%</button>
           <button class="tip">15%</button>
           <button class="tip">25%</button>
           <button class="tip">50%</button>
-          <button class="tip">Custom</button>
+          <input
+            class="custom tip"
+            type="text"
+            name="custom"
+            id=""
+            placeholder="Custom"
+          />
         </div>
 
-        <label for="people"></label>
-        <input type="number" name="people" class="people" />
+        <label for="people" class="text-color">Number of People</label>
+        <input type="number" name="people" class="people input" />
       </div>
       <div class="right">
         <div class="box-1">
           <div>
-            <p class="box-head">tip amount</p>
-            <p class="box-person">/ person</p>
+            <p class="box-head">Tip Amount</p>
+            <p class="box-person text-color">/ person</p>
           </div>
-          <p class="box-price" id="tip-per-person"></p>
+          <p class="box-price" class="tip-per-person total">$0.56</p>
         </div>
         <div class="box-2">
           <div>
-            <p class="box-head">total</p>
-            <p class="box-person">/ person</p>
+            <p class="box-head">Total</p>
+            <p class="box-person text-color">/ person</p>
           </div>
-          <p class="box-price" id="total-per-person"></p>
+          <p class="box-price" class="total-per-person total">$0.00</p>
         </div>
-        <button type="reset">reset</button>
+        <button type="reset" class="reset">reset</button>
       </div>
     </main>
-
-    <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Praveen Kumar Verma</a>.
-  </div>
+    <footer>
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="#">Praveen Kumar Verma</a>.
+    </footer>
   </body>
 </html>
